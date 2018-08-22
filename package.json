@@ -1,0 +1,26 @@
+{
+  "name": "movie-api",
+  "version": "1.0.0",
+  "description": "API movies project ",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^5.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Copelia/movie-api.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Copelia Altamirano | Laboratoria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Copelia/movie-api/issues"
+  },
+  "homepage": "https://github.com/Copelia/movie-api#readme"
+}
