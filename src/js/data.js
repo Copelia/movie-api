@@ -21,6 +21,7 @@ window.getMovies = (search) => {
       .then((data) => {
         console.log(data);
         getArray(data);
+        printMovies(data);
       })
       .catch((error) => {
         console.log('Error: ', error);

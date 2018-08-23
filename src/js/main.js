@@ -1,5 +1,7 @@
 
 let newMoviesArr = [];
+let result = '';
+let container = document.getElementById('results');
 
 window.getArray = (data) => {
 //  Obteniendo arreglo de objetos con los resultados de la api para los 3 títulos elegidos muajaj c:
@@ -11,34 +13,22 @@ window.getArray = (data) => {
     let titles = element.Title;
     let year = element.Year;
     let catalogueID = element.imdbID;
+    let poster = element.Poster;
     // console.log(titles, year, catalogueID);
+    result +=`<p>${titles}</p>
+    <img src="${poster}"/>`;
+    container.innerHTML = result;
 
     return {
-      títulos: element.Title,
+      título: element.Title,
       año: element.Year,
       identificador: catalogueID
     };
-  });
-    // Arreglo de objetos
+  });  
+  // Arreglo de objetos
   newMoviesArr.push(moviesArr);
   console.log(newMoviesArr);
 
   return newMoviesArr;
 };
 
-// Imprime undefined T_T
-// const printMovies = (array) =>{
-//   let button = document.getElementById('btn-movies');
-//   let container = document.getElementById('results');
-//   let printResult = '' ;
-//   button.addEventListener('click', event =>{
-//     for (i = 0; i < newMoviesArr.length; i++) {
-//       printResult += `<ul><p>Título</p>
-//       <li>${newMoviesArr.títulos}</li> 
-//       </ul>`;
-//       console.log(newMoviesArr.títulos);
-//       container.innerHTML = printResult;
-//     }
-//   });
-// };
-// printMovies();
