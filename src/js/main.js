@@ -2,7 +2,7 @@
 let newMoviesArr = [];
 
 window.getArray = (data) => {
-//  Obteniendo arreglo de objetos con los resultados de la api para un título :c
+//  Obteniendo arreglo de objetos con los resultados de la api para los 3 títulos elegidos muajaj c:
   let results = data.Search;
   console.log(results);
   

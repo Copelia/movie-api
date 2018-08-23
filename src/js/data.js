@@ -4,7 +4,7 @@ let api = '2a4884f1';
 let search;
 // Función para opción de select con alguna de las 3 películas
 const selected = () => {
-  let movieSelect = document.getElementById('select');
+  let movieSelect = document.getElementById('inputGroupSelect01');
   search = movieSelect.options[movieSelect.selectedIndex].value;
   //  console.log(search);
   getMovies(search);
