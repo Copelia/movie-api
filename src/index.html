@@ -11,8 +11,13 @@
 <body>
     <main>
         <section>
-            <p>Encuentra información acerca de tu película favorita</p>
-            <button id="btn-movies">Dale!</button>
+            <select id="select" onchange="selectChange()">
+                <option>Selecciona una peli...</option>
+                <option value="The+Lord+Of+The+Rings">The Lord Of The Rings</option>
+                <option value="The+Godfather">The Godfather</option>
+                <option value="Men+In+Black">Men in Black</option>
+            </select>
+            <button id="btn">Hit me!</button>
             <div id="results"></div>
         </section>
     </main>
