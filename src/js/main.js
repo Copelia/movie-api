@@ -15,8 +15,11 @@ window.getArray = (data) => {
     let catalogueID = element.imdbID;
     let poster = element.Poster;
     // console.log(titles, year, catalogueID);
-    result +=`<p>${titles}</p>
-    <img src="${poster}"/>`;
+    result +=`<p>${titles}
+    <a href="details.html">
+    <img src="${poster}"/>
+    </a>
+    </p>`;
     container.innerHTML = result;
 
     return {
